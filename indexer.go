@@ -408,9 +408,9 @@ const indexSettings = `
 {
 	"settings": {
 		"index": {
-			"number_of_shards": 5,
+			"number_of_shards": 1,
 			"number_of_replicas": 1,
-			"routing_partition_size": 3
+			"routing_partition_size": 1
 		},
 		"analysis": {
             "analyzer": {
