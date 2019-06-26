@@ -1,3 +1,11 @@
+v2.0.0
+----------
+ * Ignore value of is_test on contacts
+
+v1.0.27
+----------
+ * update ES shards to match current ES best-practice guidance
+
 v1.0.26
 ----------
  * move to go module, dont ignore any keywords
@@ -36,7 +44,6 @@ v1.0.18
 
 v1.0.17
 ----------
- 
  * change to number instead of decimal field
  * add example not exists query
 
@@ -59,7 +66,7 @@ v1.0.13
 v1.0.12
 ----------
  * add modified_on_mu for sorting / index creation
- * add prefix name for index building 
+ * add prefix name for index building
 
 v1.0.11
 ----------
@@ -107,4 +114,3 @@ v1.0.2
 v1.0.1
 ----------
  * Add changelog, move to fancy revving
-
