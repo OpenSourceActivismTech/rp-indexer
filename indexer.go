@@ -397,7 +397,7 @@ SELECT org_id, id, modified_on, is_active, row_to_json(t) FROM (
           ) g
    ) as groups
   FROM contacts_contact
-  WHERE is_test = FALSE AND modified_on >= $1
+  WHERE modified_on >= $1
   ORDER BY modified_on ASC
   LIMIT 500000
 ) t;
@@ -433,7 +433,7 @@ const indexSettings = `
                     "tokenizer": "standard",
                     "filter": [
                         "lowercase",
-                        "prefix_filter" 
+                        "prefix_filter"
                     ]
 				},
 				"name_search": {
@@ -443,7 +443,7 @@ const indexSettings = `
 						"lowercase",
 						"max_length"
 					]
-				}			
+				}
 			},
 			"tokenizer": {
 				"location_tokenizer": {
@@ -465,7 +465,7 @@ const indexSettings = `
 				}
 			},
 			"filter": {
-                "prefix_filter": { 
+                "prefix_filter": {
                     "type":     "edge_ngram",
                     "min_gram": 2,
                     "max_gram": 8
@@ -564,7 +564,7 @@ const indexSettings = `
 				},
 				"modified_on_mu": {
 					"type": "long"
-				},		
+				},
 				"name": {
 					"type": "text",
 					"analyzer": "prefix",
