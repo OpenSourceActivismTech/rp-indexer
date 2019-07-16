@@ -1,1 +1,1 @@
-worker: rp-indexer
+worker: rp-indexer -log-level warn
